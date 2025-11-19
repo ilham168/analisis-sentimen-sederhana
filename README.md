@@ -19,9 +19,11 @@ Proyek ini adalah aplikasi web berbasis **Deep Learning** untuk menganalisis sen
 
 ## 🖼️ Tampilan Aplikasi
 
-| Halaman Utama | Hasil Analisis |
+| Hasil Analisa | Hasil Analisis |
 |-------------|-------------|
-| ![Home Screen](screenshots/ss1.png) | ![Result Screen](screenshots/ss2.png) |
+| ![Home Screen] <img width="1917" height="977" alt="Screenshot 2025-11-19 115418" src="https://github.com/user-attachments/assets/42606f3d-f845-4044-830a-4bc754a4786a" />
+| ![Result Screen<img width="1913" height="983" alt="Screenshot 2025-11-19 115331" src="https://github.com/user-attachments/assets/53a0eba4-11c1-4d1b-ba3e-417d3ad0bd38" />
+] |
 
 > *Catatan: Simpan screenshot aplikasi Anda di folder `screenshots/` dengan nama `ss1.png` dan `ss2.png`.*
 
@@ -67,6 +69,6 @@ pip install -r requirements.txt
 python -m streamlit run app.py
 ```
 Aplikasi akan otomatis terbuka di browser pada alamat: http://localhost:8501
-```
+
 📚 Lisensi
 MIT License — Silakan gunakan untuk tujuan edukasi dan pengembangan.
