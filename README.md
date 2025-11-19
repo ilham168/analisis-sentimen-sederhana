@@ -26,54 +26,47 @@ Proyek ini adalah aplikasi web berbasis **Deep Learning** untuk menganalisis sen
 > *Catatan: Simpan screenshot aplikasi Anda di folder `screenshots/` dengan nama `ss1.png` dan `ss2.png`.*
 
 ## 📁 Struktur Proyek
-analisis-sentimen-marketplace/ 
-│ 
-├── app.py # File utama aplikasi Streamlit 
-├── model_sentimen_v2.h5 # Model Deep Learning yang sudah dilatih (Otak AI) ├── tokenizer_v2.pickle # Tokenizer untuk memproses teks (Kamus Bahasa)
-├── requirements.txt # Daftar library yang dibutuhkan 
-└── README.md # Dokumentasi proyek
+analisis-sentimen-marketplace/
+ ├── app.py # File utama aplikasi Streamlit 
+ └── model_sentimen_v2.h5 # Model Deep Learning yang sudah dilatih (Otak AI) ├── tokenizer_v2.pickle # Tokenizer untuk memproses teks (Kamus Bahasa)
+ └── requirements.txt # Daftar library yang dibutuhkan 
+ └──README.md # Dokumentasi proye
+ 
+#🧠 Tentang Model
+```
+-Model dilatih menggunakan TensorFlow/Keras dengan spesifikasi:
+-Preprocessing: Pembersihan teks & Normalisasi Slang.
+-Arsitektur: - Embedding Layer: Untuk memahami makna kata.
+-GlobalAveragePooling1D: Untuk efisiensi komputasi.
+-Dense Layer (ReLU & Sigmoid): Untuk klasifikasi biner.
+-Akurasi: ~80% pada data validasi.
+```
+
+💡 Pengembangan Selanjutnya
+```
+[ ] Menambahkan dataset yang lebih besar untuk meningkatkan akurasi.
+[ ] Implementasi model transformer (IndoBERT) untuk performa lebih tinggi.
+[ ] Fitur upload file CSV untuk analisis massal.
+[ ] Deploy ke Streamlit Cloud.
+```
 
 ## 🛠 Cara Menjalankan (Local)
 
 Pastikan Python sudah terinstall di komputer Anda.
-
 **1. Clone Repository**
 ```bash
 git clone [https://github.com/ilham168/analisis-sentimen-sederhana.git](https://github.com/ilham168/analisis-sentimen-sederhana.git)
 cd analisis-sentimen-sederhana
+```
 2. Install Library Sangat disarankan menggunakan virtual environment. Install dependensi dengan perintah:
-
-Bash
-
+```Bash
 pip install -r requirements.txt
+```
 3. Jalankan Aplikasi Gunakan perintah berikut untuk memulai server Streamlit:
-
-Bash
-
+```Bash
 python -m streamlit run app.py
+```
 Aplikasi akan otomatis terbuka di browser pada alamat: http://localhost:8501
-
-🧠 Tentang Model
--Model dilatih menggunakan TensorFlow/Keras dengan spesifikasi:
-
--Preprocessing: Pembersihan teks & Normalisasi Slang.
-
--Arsitektur: - Embedding Layer: Untuk memahami makna kata.
-
--GlobalAveragePooling1D: Untuk efisiensi komputasi.
-
--Dense Layer (ReLU & Sigmoid): Untuk klasifikasi biner.
-
--Akurasi: ~80% pada data validasi.
-
-💡 Pengembangan Selanjutnya
-[ ] Menambahkan dataset yang lebih besar untuk meningkatkan akurasi.
-
-[ ] Implementasi model transformer (IndoBERT) untuk performa lebih tinggi.
-
-[ ] Fitur upload file CSV untuk analisis massal.
-
-[ ] Deploy ke Streamlit Cloud.
-
+```
 📚 Lisensi
 MIT License — Silakan gunakan untuk tujuan edukasi dan pengembangan.
