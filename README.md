@@ -19,20 +19,20 @@ Proyek ini adalah aplikasi web berbasis **Deep Learning** untuk menganalisis sen
 
 ## 🖼️ Tampilan Aplikasi
 
-| Hasil Analisa | Hasil Analisis |
+| Hasil Analisa |
 |-------------|-------------|
-| ![Home Screen] <img width="1917" height="977" alt="Screenshot 2025-11-19 115418" src="https://github.com/user-attachments/assets/42606f3d-f845-4044-830a-4bc754a4786a" />
-| ![Result Screen<img width="1913" height="983" alt="Screenshot 2025-11-19 115331" src="https://github.com/user-attachments/assets/53a0eba4-11c1-4d1b-ba3e-417d3ad0bd38" />
-] |
+|  <img width="1917" height="977" alt="Screenshot 2025-11-19 115418" src="https://github.com/user-attachments/assets/42606f3d-f845-4044-830a-4bc754a4786a" />
+| <img width="1913" height="983" alt="Screenshot 2025-11-19 115331" src="https://github.com/user-attachments/assets/53a0eba4-11c1-4d1b-ba3e-417d3ad0bd38" /> |
 
-> *Catatan: Simpan screenshot aplikasi Anda di folder `screenshots/` dengan nama `ss1.png` dan `ss2.png`.*
 
 ## 📁 Struktur Proyek
+```
 analisis-sentimen-marketplace/
  ├── app.py # File utama aplikasi Streamlit 
  └── model_sentimen_v2.h5 # Model Deep Learning yang sudah dilatih (Otak AI) ├── tokenizer_v2.pickle # Tokenizer untuk memproses teks (Kamus Bahasa)
  └── requirements.txt # Daftar library yang dibutuhkan 
  └──README.md # Dokumentasi proye
+```
  
 #🧠 Tentang Model
 ```
